@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,12 +27,18 @@ h1 {
   font-size: 20px;
   color: black;
   text-align: center;
+
+  display: table; /* keep the background color wrapped tight */
+  margin: 0px auto 0px auto; /* keep the table centered */
+  padding:5px;font-size:20px;background-color:hsl(0, 100%, 90%);
 }
   
-p.inset {
- border-bottom:inset;
- border-right: inset;
- border-color: white}
+p.solid {
+ border-bottom:solid;
+ border-right: solid;
+ border-left: solid;
+ border-top: solid;
+ border-color: hsl(0, 100%, 75%)}
 p.none {border-style: none;}
  </style>
  
@@ -55,67 +62,67 @@ p.none {border-style: none;}
  
  
  
-<p class="inset">Senior High School Graduated From? </p>
+<p class="solid">Senior High School Graduated From? </p>
  
 <p class="none">Graduated from <abbr title="Our Lady of the Lake School">OLLS</abbr>,  in Muntinlupa city</p>
  
+ <p class="solid">Course: </p>
+ 
+<p class="none">Bachelor of Science in Computer Science Major in Software System</p>
  
  
-<p class="none">Course: Bachelor of Science in Computer Science Major in Software System</p>
  
- 
- 
-<p class="inset">Scholarship? </p>
+<p class="solid">Scholarship? </p>
  
 <p>Yes </p>
  
  
  
-<p class="inset">Transferee / Second Course?</p>
+<p class="solid">Transferee / Second Course?</p>
  
 <p class="none">No </p>
  
  
  
-<p class="inset">Did you choose this course? Yes / No</p>
+<p class="solid">Did you choose this course? Yes / No</p>
  
-<p class="inset">Why Yes?</p>
+<p class="solid">Why Yes?</p>
  
 <p class="none">I find software and systems interesting.  </p>
  
  
  
-<p class="inset">I.T. Experience: Programming / Gaming / Others</p>
+<p class="solid">I.T. Experience: Programming / Gaming / Others</p>
  
 <p class="none">I have coded using python and know the basics of it due to the teachings of my previous teachers from previous subjects.</p>
  
  
  
-<p class="inset">Hobbies / Interests / libangan </p>
+<p class="solid">Hobbies / Interests / libangan </p>
  
 <p class="none">I like watching movies and series from different countries about different genres or topics. </p>
  
  
  
-<p class="inset">Goals in life / pangarap sa buhay</p>
+<p class="solid">Goals in life / pangarap sa buhay</p>
  
 <p class="none">My goal is to be Financially independent/stable.</p>
  
  
  
-<p class="inset">What do you expect to learn from this course (Web Programming)?</p>
+<p class="solid">What do you expect to learn from this course (Web Programming)?</p>
  
 <p class="none">I expect to learn more than just about basics of web programming and to learn and experience the development of a website.</p>
  
  
  
-<p class="inset">What do you want to learn to help you in your chosen Major?  </p>
+<p class="solid">What do you want to learn to help you in your chosen Major?  </p>
  
 <p class="none">To learn about both front end and back end. I want to learn about Web development in general. </p>
  
  
  
-<p class="inset">Any other interesting aspects of your life that you would like to share</p>
+<p class="solid">Any other interesting aspects of your life that you would like to share</p>
  
 <p class="none">I have already mentioned it, but lately I’ve started to like sewing, and although I am still starting to learn, <br>
  
@@ -124,7 +131,7 @@ it is enjoyable once you finish a sewing project. It is just like the feeling yo
  
  
  
-<p class="inset">Add one or more pictures about yourself and your interests that you would like to share for your introduction.</p>
+<p class="solid">Add one or more pictures about yourself and your interests that you would like to share for your introduction.</p>
  
 <p style="color:red;">Unfortunately, I do not have other pictures I would like to share to the class.</p>
 
