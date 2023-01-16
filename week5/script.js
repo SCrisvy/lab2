@@ -3,6 +3,7 @@ const links = document.querySelectorAll('ul li');
 const pages = document.querySelectorAll('.page');
 const allBtns = document.querySelectorAll('.close-btn');
 
+//lesson 2.2 : Let
 let selectedPageBtn = "";
 for(let i = 0; i < links.length; i++){
     links[i].addEventListener('click', function(event){
