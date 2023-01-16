@@ -4,6 +4,7 @@ const pages = document.querySelectorAll('.page');
 const allBtns = document.querySelectorAll('.close-btn');
 
 //lesson 2.2 : Let
+// lesson 1.7: comments
 let selectedPageBtn = "";
 for(let i = 0; i < links.length; i++){
     links[i].addEventListener('click', function(event){
