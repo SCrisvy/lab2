@@ -1,4 +1,4 @@
-
+// Lesson 2.3 :Const
 const links = document.querySelectorAll('ul li');
 const pages = document.querySelectorAll('.page');
 const allBtns = document.querySelectorAll('.close-btn');
