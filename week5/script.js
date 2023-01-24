@@ -6,6 +6,7 @@ const allBtns = document.querySelectorAll('.close-btn');
 //lesson 2.2 : Let
 // lesson 1.7: comments
 let selectedPageBtn = ""; // Lesson 6.1: strings
+// loop for
 for(let i = 0; i < links.length; i++){
     links[i].addEventListener('click', function(event){
         event.preventDefault();
