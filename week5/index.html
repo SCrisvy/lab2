@@ -42,7 +42,7 @@
             <h2 class = "title">Education</h2>
             <h2> Senior High School Graduated From? </h2>
             <p>Graduated from <abbr title="Our Lady of the Lake School">OLLS</abbr>,  in Muntinlupa city</p>
-            <h2><div onmouseover="mOver(this)" onmouseout="mOut(this)" Course: </div></h2>
+            <div onmouseover="mOver(this)" onmouseout="mOut(this)" <h2>Course: </h2></div>
             <p>Bachelor of Science in Computer Science Major in Software System</p>
 			<h2>Scholarship? </h2>
             <p>Yes, Im on a scholarship</p>
@@ -117,10 +117,20 @@
         </section>
 
        <p id="demo"></p>
+	   
+	   <!-- Script Tag -->
+	   function mOver(obj) {
+          obj.innerHTML = "What stresses me out: "
+	      }
+
+       function mOut(obj) {
+          obj.innerHTML = "Course: "
+		  }
 
 
 
         <!-- Script Tag -->
         <script src = "script.js"></script>
+		
     </body>
 </html>

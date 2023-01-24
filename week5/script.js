@@ -25,10 +25,5 @@ for(let i = 0; i < allBtns.length; i++){
     });
 }
 
-function mOver(obj) {
-  obj.innerHTML = "What stresses me out: "
-}
 
-function mOut(obj) {
-  obj.innerHTML = "Course: "
 }
