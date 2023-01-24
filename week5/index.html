@@ -146,7 +146,7 @@
              document.getElementById("date-display").innerHTML = dateTime;
 			 
 		setInterval(function(){ 
-                var dateElement = document.getElementById("date");
+                var dateElement = document.getElementById("date-display");
                 var currentDate = new Date();
                 dateElement.innerHTML = currentDate.toDateString();
                 }, 1000);
