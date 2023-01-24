@@ -144,6 +144,13 @@
              var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
              var dateTime = date+' '+time;
              document.getElementById("date-display").innerHTML = dateTime;
+			 
+		setInterval(function(){ 
+                var dateElement = document.getElementById("date");
+                var currentDate = new Date();
+                dateElement.innerHTML = currentDate.toDateString();
+                }, 1000);
+
 }
 
 	   </script>
