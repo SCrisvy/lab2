@@ -32,3 +32,4 @@ function mOver(obj) {
 function mOut(obj) {
   obj.innerHTML = "Course: "
 }
+}
