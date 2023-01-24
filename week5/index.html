@@ -145,11 +145,13 @@
              var dateTime = date+' '+time;
              document.getElementById("date-display").innerHTML = dateTime;
 			 
+		
 		setInterval(function(){ 
-                var dateElement = document.getElementById("date-display");
-                var currentDate = new Date();
-                dateElement.innerHTML = currentDate.toDateString();
-                }, 1000);
+           var timeElement = document.getElementById("date-display");
+           var currentTime = new Date();
+           timeElement.innerHTML = currentTime.toLocaleTimeString();
+            }, 1000);
+
 
 }
 
