@@ -150,7 +150,12 @@
            var timeElement = document.getElementById("date-display");
            var currentTime = new Date();
            timeElement.innerHTML = currentTime.toLocaleTimeString();
+		   var dateElement = document.getElementById("date-display");
+           var currentDate = new Date();
+           dateElement.innerHTML = currentDate.toDateString();
             }, 1000);
+			
+
 
 
 }
