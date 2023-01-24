@@ -34,8 +34,8 @@
                 </nav>
             </div>
 			<div style="position: absolute; bottom: 0; left: 0;">
-		   <button id="date-button">Current Time</button>
-		   <div id="date-display"></div>
+		   <button id="time-button">Current Time</button>
+		   <div id="time-display"></div>
            </div>
         </header>
 
@@ -134,20 +134,17 @@
 		 
         }
 		
-		document.getElementById("date-button").addEventListener("click", showDate);
-             var date = new Date().toDateString();
+		document.getElementById("time-button").addEventListener("click", showDate);
              var time = new Date().toTimeString();
 
-        function showDate() {
-             var today = new Date();
-             var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+        function showTime() {
              var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
              var dateTime = date+' '+time;
-             document.getElementById("date-display").innerHTML = dateTime;
+             document.getElementById("time-display").innerHTML = dateTime;
 			 
 		
 		setInterval(function(){ 
-           var timeElement = document.getElementById("date-display");
+           var timeElement = document.getElementById("time-display");
            var currentTime = new Date();
            timeElement.innerHTML = currentTime.toLocaleTimeString();
             }, 1000);
