@@ -27,4 +27,3 @@ for(let i = 0; i < allBtns.length; i++){
 }
 
 
-}
