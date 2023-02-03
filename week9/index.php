@@ -122,11 +122,16 @@
             <article>
         </section>
 		
-		<section id = "Form" class = "page">
+		
+		
+		
+		
+		        <section id = "Form" class = "page">
             <span class = "close-btn">
                 <i class = "fas fa-times"></i>
             </span>
-          <?php
+            <h2 class = "title">Form</h2>
+						 <?php
 				// define variables and set to empty values
 				$nameErr = $emailErr = $genderErr = $websiteErr = "";
 				$name = $email = $gender = $comment = $website = "";
@@ -218,7 +223,7 @@
 				echo "<br>";
 				echo $gender;
 				?>
-						</section>
+				</section>
 
        <p id="demo"></p>
 	   
