@@ -30,6 +30,7 @@
                         <li><a href = "#">About</a></li>
                         <li><a href = "#">References</a></li>
 						<li><a href = "#">Form</a></li>
+						<li><a href = "#">Myguests</a></li>
                         
                     </ul>
                 </nav>
@@ -223,7 +224,70 @@
 				echo "<br>";
 				echo $gender;
 				?>
+				
+				
+				<?php
+				
+				if ($_SERVER["REQUEST_METHOD"] == "POST"){
+				$mysqli = new mysqli("localhost","root","","myDB", "3308");
+
+				// Check connection
+				if ($mysqli -> connect_errno) {
+				  echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
+				  exit();
+				}
+
+				$sql = "INSERT INTO MyGuests (name, email, website, comment, gender)
+				VALUES ('$name', '$email', '$website', '$comment', '$gender')";
+
+				if ($mysqli->query($sql) === TRUE) {
+				  echo "New record created successfully";
+				} else {
+				  echo "Error: " . $sql . "<br>" . $mysqli->error;
+				}
+
+				$mysqli->close();
+				}
+				
+				?>
+				
+				
+				
 				</section>
+				
+				    <section id = "Myguests" class = "page">
+            <span class = "close-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+            <h2 class = "title">Myguests</h2>
+			<article>
+			
+			<?php
+			$mysqli = new mysqli("localhost","root","","myDB", "3308");
+
+			// Check connection
+			if ($mysqli -> connect_errno) {
+			  echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
+			  exit();
+			}
+			$sql = "SELECT id, name, email, website, comment, gender, reg_date FROM MyGuests";
+			$result = $mysqli->query($sql);
+
+			if ($result->num_rows > 0) {
+			  // output data of each row
+			  while($row = $result->fetch_assoc()) {
+				echo "id: " . $row["id"]. " - Name: " . $row["name"]. " - Email: " . $row["email"]. "<br>";
+			  }
+			} else {
+			  echo "0 results";
+			}
+			$mysqli->close();
+			?>
+            <article>
+			
+			
+        </section>
+				
 
        <p id="demo"></p>
 	   
