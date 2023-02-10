@@ -229,7 +229,7 @@
 				<?php
 				
 				if ($_SERVER["REQUEST_METHOD"] == "POST"){
-				$mysqli = new mysqli("localhost", "webprogss211", "webprogss211", "sgricafort_myguests");
+				$mysqli = new mysqli("", "webprogss211", "webprogss211", "sgricafort_myguests");
 
 				// Check connection
 				if ($mysqli -> connect_errno) {
@@ -266,7 +266,7 @@
 			<article>
 			
 			<?php
-			$mysqli = new mysqli("localhost", "webprogss211", "webprogss211", "sgricafort_myguests");
+			$mysqli = new mysqli("", "webprogss211", "webprogss211", "sgricafort_myguests");
 
 			// Check connection
 			if ($mysqli -> connect_errno) {
