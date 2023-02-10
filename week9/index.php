@@ -29,8 +29,8 @@
                         <li><a href = "#">Education</a></li>
                         <li><a href = "#">About</a></li>
                         <li><a href = "#">References</a></li>
-						<li><a href = "#">Form</a></li>
-						<li><a href = "#">Myguests</a></li>
+			<li><a href = "#">Form</a></li>
+			<li><a href = "#">Myguests</a></li>
                         
                     </ul>
                 </nav>
@@ -291,44 +291,7 @@
 
        <p id="demo"></p>
 	   
-	   <!-- Script Tag -->
-	   <script>
-	   
-	   function YFunction() {
-  alert('Boo!');
-       }
-	   
-	   function mOver(obj) { 
-         obj.innerHTML =  "What stresses me out: " 
-        }
 
-       function mOut(obj) {
-         obj.innerHTML =  "Course: " 
-		 
-        }
-		
-		document.getElementById("date-button").addEventListener("click", showDate);
-             
-             var time = new Date().toTimeString();
-
-        function showDate() {
-             var today = new Date();
-             var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-             var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-             var dateTime = date+' '+time;
-             document.getElementById("date-display").innerHTML = dateTime;
-			 
-		
-		setInterval(function(){ 
-           var timeElement = document.getElementById("date-display");
-           var currentTime = new Date();
-           timeElement.innerHTML = currentTime.toLocaleTimeString();
-            }, 1000);
-
-
-}
-
-	   </script>
 	
 
         <!-- Script Tag -->
