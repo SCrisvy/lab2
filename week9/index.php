@@ -237,7 +237,7 @@
 				  exit();
 				}
 
-				$sql = "INSERT INTO MyGuests (name, email, website, comment, gender)
+				$sql = "INSERT INTO sgricafort_myguests (name, email, website, comment, gender)
 				VALUES ('$name', '$email', '$website', '$comment', '$gender')";
 
 				if ($mysqli->query($sql) === TRUE) {
@@ -273,7 +273,7 @@
 			  echo "Failed to connect to MySQL: " . $mysqli -> connect_error;
 			  exit();
 			}
-			$sql = "SELECT id, name, email, website, comment, gender, reg_date FROM MyGuests";
+			$sql = "SELECT id, name, email, website, comment, gender, reg_date FROM sgricafort_myguests";
 			$result = $mysqli->query($sql);
 
 			if ($result->num_rows > 0) {
